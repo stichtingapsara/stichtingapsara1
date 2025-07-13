@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stichting Apsara</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --primary-color: #e3c22d;
+      --text-color: #333;
+      --background-color: #fdfdfd;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: white;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav .menu a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img {
+      height: 80px;
+      width: auto;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .content-left {
+      flex: 2 1 600px;
+      min-width: 280px;
+    }
+
+    .content-right {
+      flex: 1 1 350px;
+      min-width: 280px;
+      background: #fafafa;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.05);
+      height: fit-content;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2, h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    p {
+      margin: 0.5em 0 1em;
+    }
+
+    .bestuurslid {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .bestuurslid img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--primary-color);
+    }
+
+    footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        margin-top: 10px;
+      }
+      nav .menu a {
+        padding: 10px;
+        border-top: 1px solid #444;
+      }
+      nav .menu.show {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        margin: 20px;
+      }
+      .content-left,
+      .content-right {
+        flex: none;
+        min-width: 100%;
+      }
+      .content-right {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo"></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+  <div class="menu" id="menu">
+       <a href="index.html">Home</a>
+      <a href="projecten.html">Projecten</a>
+      <a href="documentatie.html">Documentatie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+   </nav>
+
+  <header>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <img src="logo.png" alt="Stichting Apsara logo">
+      <div>
+       
+<h1 style="margin:0;"><i>Van bodem tot basis – samen bouwen we op</i></h1>       
+      </div>
+    </div>
+    <div>
+      <img src="anbi.png" alt="ANBI logo" style="height:60px;">
+    </div>
+  </header>
+
+  <main>
+    <div class="content-left">
+      <section>
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+          <h3>Documentatie ten behoeve van de ANBI</h3>
+          <a href="doneer.html" target="_blank" style="background-color:orange; color:white; text-decoration:none; padding:10px 20px; border-radius:6px; font-weight:bold; margin-top:8px;">Doneer nu</a>
+        </div></section?
+
+      <section>
+<h4>Missie, visie en beleid</h4> <p>
+
+    <a href="beleidsplan_2025_2030.pdf" target="_blank">Beleidsplan 2025-2030 (PDF)</a><br>
+
+<h4>Bedrijfsmatige gegevens</h4> <p>
+    <a href="bedrijfsgegevens.pdf" target="_blank">Gegevens stichting (PDF)</a><br>
+
+
+<h4>Financiële verantwoording</h4> <p>
+
+
+
+        <p>
+          <a href="jaarrekening-2024.pdf" target="_blank">Bekijk hier onze jaarrekening 2024 (PDF)</a><br>
+          <a href="jaarrekening-2023.pdf" target="_blank">Bekijk hier onze jaarrekening 2023 (PDF)</a><br>
+          <a href="jaarrekening-2022.pdf" target="_blank">Bekijk hier onze jaarrekening 2022 (PDF)</a><br>
+          <a href="jaarrekening-2021.pdf" target="_blank">Bekijk hier onze jaarrekening 2021 (PDF)</a><br>
+          <a href="jaarrekening-2020.pdf" target="_blank">Bekijk hier onze jaarrekening 2020 (PDF)</a>
+        </p>
+      </section>
+    </div>
+
+    <aside class="content-right">
+      <h3>Ons bestuur</h3>
+      <div class="bestuurslid">
+        <img src="eveline.png" alt="Eveline Groeneveld, voorzitter">
+        <div>Eveline Groeneveld, <i>voorzitter</i></div>
+      </div>
+      <div class="bestuurslid">
+        <img src="ton.png" alt="Ton Groeneveld, penningmeester">
+        <div>Ton Groeneveld, <i>penningmeester</i></div>
+      </div>
+      <div class="bestuurslid">
+        <img src="barbara.png" alt="Secretaris Barbara van Ooyen">
+        <div>Barbara van Ooyen, <i>secretaris</i></div>
+      </div>
+
+      <section>
+      <h3>Elke euro telt</h3>
+      <p>
+        Bij Stichting Apsara werken we met minimale overheadkosten. Zo zorgen we ervoor dat onze donaties écht verschil maken, daar waar het het hardst nodig is. We zijn trots dat Stichting Apsara officieel de ANBI-status heeft! Dit betekent dat jouw donatie niet alleen bijdraagt aan een mooiere wereld, maar ook fiscaal voordelig is!
+. </p>
+    </section>
+    </aside>
+  </main>
+
+  <footer>
+    &copy; 2025 Stichting Apsara<br>
+    IBAN: NL70 RABO 0191637718 | BIC: RABONL2U<br>
+    Zeemanlaan 19, 3572 ZC Utrecht<br>
+    info@stichtingapsara.nl<br>
+    KvK‑nummer: 61202924 | RSIN‑nummer: 854251583
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
