@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
+
+
+<body>
+<!DOCTYPE html>
+<html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +12,31 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="stichting_apsara_styles.css">
 </head>
+
 <body>
-<nav>
+
+<!-- TABEL MET LOGO LINKS, THEORY7 EN MENU RECHTS -->
+<table style="width: 100%; background-color: white; padding: 10px 20px;">
+  <tr>
+    <!-- Linkerkant: Logo Stichting Apsara -->
+    <td rowspan="2" style="vertical-align: top;">
+      <img src="logo.png" alt="Stichting Apsara logo" style="height: 100px;">
+    </td>
+
+    <!-- Rechterkant boven: Theory7 -->
+    <td style="text-align: right; padding-bottom: 5px;">
+      <img src="theory7.png" alt="Theory7 logo" style="height: 20px; vertical-align: middle;"><br>
+      <span style="font-size: 0.6em;">Gesponsord door 
+        <a href="https://www.theory7.net/" target="_blank" style="text-decoration: none; color: #0066cc;">webhostingbedrijf Theory7</a>
+      </span>
+    </td>
+</table>
+ <nav>
   <div style="display: flex; align-items: flex-end; width: 100%; justify-content: space-between; flex-wrap: wrap;">
-    <div class="logo" style="display: flex; align-items: flex-end;">
-      <img src="logo.png" alt="Stichting Apsara logo" style="height: 100px; width: auto;">
-    </div>
     <div style="display: flex; align-items: flex-end; gap: 15px;">
       <div class="hamburger" onclick="toggleMenu()">
         <div></div><div></div><div></div>
+      </div><div></div><div></div><div></div>
       </div>
       <div class="menu" id="menu">
         <a href="index.html">Home</a>
@@ -26,6 +47,7 @@
     </div>
   </div>
 </nav>
+
 
   <header>
   <img src="banner01.png" class="header-banner" alt="Banner 1" style="height: 120px;">
