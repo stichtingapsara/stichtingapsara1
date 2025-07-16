@@ -30,18 +30,23 @@
         <a href="https://www.theory7.net/" target="_blank" style="text-decoration: none; color: #0066cc;">webhostingbedrijf Theory7</a>
       </span>
     </td>
-  </tr>
-  <tr>
-    <!-- Rechterkant onder: menu -->
-    <td style="text-align: right; padding-top: 5px;">
-      <a href="index.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 15px;">Home</a>
-      <a href="projecten.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 15px;">Projecten</a>
-      <a href="documentatie.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 15px;">Documentatie</a>
-      <a href="contact.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 15px;">Contact</a>
-    </td>
-  </tr>
 </table>
-
+ <nav>
+  <div style="display: flex; align-items: flex-end; width: 100%; justify-content: space-between; flex-wrap: wrap;">
+    <div style="display: flex; align-items: flex-end; gap: 15px;">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+      </div><div></div><div></div><div></div>
+      </div>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="documentatie.html">Documentatie</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
   <header>
   <img src="banner01.png" class="header-banner" alt="Banner 1" style="height: 120px;">
